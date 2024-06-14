@@ -1,18 +1,32 @@
-body{
-background-color: steelblue;
-display: flex;
-align-items: center;
-justify-content: center;
-height: 50vh;
-font-family: monospace;
-font-size: 20px;
+body {
+  /* background-color: steelblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: monospace;
+  font-size: 20px;
+  transition: background 0.4s ease;
+  background-color: gray;
+  button {
+    background-color: rgb(255, 255, 0);
+  }
 }
-button{
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
+button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
 }
-p{
-    color: white;
+.active {
+  transition: background 0.4s ease;
+
+  background-color: rgb(0, 0, 0);
+  button {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+p {
+  color: white;
 }
